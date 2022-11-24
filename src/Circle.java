@@ -19,9 +19,9 @@ public class Circle extends Shape{
 
     Circle(double radio, String color, boolean filled){
         super();
-        setRadio(radio);
-        setColor(color);
-        setFilled(filled);
+        setRadio(1.0);
+        setColor("red");
+        setFilled(true);
     }
 
     @Override
