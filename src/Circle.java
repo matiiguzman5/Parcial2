@@ -16,11 +16,12 @@ public class Circle extends Shape{
     Circle(double radio){
         setRadio(1.0);
     }
+
     Circle(double radio, String color, boolean filled){
         super();
-        setRadio(1.0);
-        setColor("red");
-        setFilled(true);
+        setRadio(radio);
+        setColor(color);
+        setFilled(filled);
     }
 
     @Override
