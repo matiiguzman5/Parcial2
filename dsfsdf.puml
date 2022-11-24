@@ -1,0 +1,8 @@
+@startuml
+abstract class Shape {
++ String color
+~ boolean filled
+}
+class Main {
+}
+@enduml

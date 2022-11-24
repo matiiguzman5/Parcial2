@@ -1,0 +1,12 @@
+@startuml
+abstract class Shape {
+- String color
+- boolean filled
++ String getColor()
++ void setColor(String)
++ boolean isFilled()
++ void setFilled(boolean)
+}
+class Main {
+}
+@enduml
