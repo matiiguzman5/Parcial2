@@ -2,6 +2,10 @@ public abstract class Shape {
     private String color;
     private boolean filled;
 
+    public Shape() {
+
+    }
+
 
     public String getColor() {
         return color;
@@ -26,5 +30,31 @@ public abstract class Shape {
     public abstract class getArea {
         private double area;
 
+        public double getArea() {
+            return area;
+        }
+
+        public void setArea(double area) {
+            this.area = area;
+        }
+    }
+    public abstract class getPerimeter{
+        private double perimeter;
+
+        public double getPerimeter() {
+            return perimeter;
+        }
+
+        public void setPerimeter(double perimeter) {
+            this.perimeter = perimeter;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Shape[" +
+                "color='" + color + '\'' +
+                ", filled=" + filled +
+                ']';
     }
 }
