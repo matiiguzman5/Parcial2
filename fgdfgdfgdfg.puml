@@ -1,0 +1,37 @@
+@startuml
+class Circle {
+- Object Shape
+- double radio
++ double getRadio()
++ void setRadio(double)
++ String toString()
+}
+abstract class Shape {
+- String color
+- boolean filled
++ String getColor()
++ void setColor(String)
++ boolean isFilled()
++ void setFilled(boolean)
++ String toString()
+}
+abstract class Shape.getArea {
+- double area
++ double getArea()
++ void setArea(double)
+}
+abstract class Shape.getPerimeter {
+- double perimeter
++ double getPerimeter()
++ void setPerimeter(double)
+}
+class PACKAGE_NAME.Rectangle {
+}
+class Main {
+}
+
+
+Shape <|-- Circle
+Shape +.. Shape.getArea
+Shape +.. Shape.getPerimeter
+@enduml

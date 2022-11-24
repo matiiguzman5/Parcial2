@@ -1,10 +1,6 @@
 public class Circle extends Shape{
-    private Object Shape;
 
-    Circle(String color, boolean filled) {
-        super(color, filled);
-    }
-    private double radio;
+    public double radio;
 
     public double getRadio() {
         return radio;
@@ -15,18 +11,19 @@ public class Circle extends Shape{
     }
     Circle(double radio){
         super();
-        setRadio(radio);
+        setRadio(1.0);
     }
     Circle(double radio, String color, boolean filled){
-        setRadio(radio);
-        setColor(color);
-        setFilled(filled);
+        setRadio(1.0);
+        setColor("red");
+        setFilled(true);
     }
 
     @Override
     public String toString() {
-        return "Circle[" + "Shape[" + Shape +
-                "radio=" + radio +
+        return "Circle[" + "Shape[" +
+                ", color='" + color + '\'' +
+                ", filled=" + filled + "]radio=" + radio +
                 ']';
     }
 }
