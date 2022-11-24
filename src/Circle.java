@@ -2,6 +2,10 @@ public class Circle extends Shape{
 
     public double radio;
 
+    public Circle() {
+
+    }
+
     public double getRadio() {
         return radio;
     }
@@ -10,10 +14,10 @@ public class Circle extends Shape{
         this.radio = radio;
     }
     Circle(double radio){
-        super();
         setRadio(1.0);
     }
     Circle(double radio, String color, boolean filled){
+        super();
         setRadio(1.0);
         setColor("red");
         setFilled(true);

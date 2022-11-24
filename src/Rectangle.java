@@ -2,6 +2,10 @@ public class Rectangle extends Shape{
     public double  width;
     public double length;
 
+    public Rectangle() {
+
+    }
+
     public double getWidth() {
         return width;
     }
@@ -32,14 +36,11 @@ public class Rectangle extends Shape{
     @Override
     public String toString() {
         return "Rectangle[" + "Shape[" +
-                "width=" + width +
-                ", length=" + length +
                 ", color='" + color + '\'' +
-                ", filled=" + filled +
+                ", filled=" + filled + "]width=" + width +
+                ", length=" + length +
                 ']';
+
     }
-    "Circle[" + "Shape[" +
-            ", color='" + color + '\'' +
-            ", filled=" + filled + "]radio=" + radio +
-            ']';
+
 }
